@@ -28,7 +28,6 @@ public class PlayerController : MonoBehaviour
         }
 
         Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0.0f));
-
         RaycastHit hit;
 
         if(Physics.Raycast(ray, out hit))
@@ -46,8 +45,5 @@ public class PlayerController : MonoBehaviour
         {
             walking = true;     
         }
-
-
-
     }
 }
